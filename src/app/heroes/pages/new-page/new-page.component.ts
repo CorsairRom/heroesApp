@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from "@angular/forms";
 import { ActivatedRoute, Router } from '@angular/router';
+
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
 
 import { Hero, Publisher } from '../../interfaces/hero.interface';
 import { HeroesService } from '../../services/heroes.service';
 import { switchMap } from 'rxjs';
+
+import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-dialog.component';
 
 @Component({
   selector: 'app-new-page',
@@ -38,7 +42,8 @@ export class NewPageComponent implements OnInit{
     private heroService: HeroesService,
     private activateRoute: ActivatedRoute,
     private router: Router,
-    private snackbar: MatSnackBar
+    private snackbar: MatSnackBar,
+    private dialog: MatDialog
     ){}
 
 
@@ -79,6 +84,21 @@ export class NewPageComponent implements OnInit{
       });
 
   }
+
+  onDeleteHero(){
+    if(!this.currentHero.id) throw Error('Hero id is required');
+
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+      data: this.heroForm.value,
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      console.log({result});
+    });
+
+  }
+
   showSnackbar( message: string ):void {
     this.snackbar.open( message, 'done', {
       duration: 2500,
