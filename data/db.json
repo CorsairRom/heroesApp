@@ -21,7 +21,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
-      "characters": "Kal-El"
+      "characters": "Kal-El",
+      "alt_img": "https://i.pinimg.com/736x/20/e9/9e/20e99e9e27a1e25917bc8d1968589a19.jpg"
     },
     {
       "id": "dc-flash",
@@ -166,6 +167,69 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "DpHlyiU",
+      "superhero": "richard",
+      "publisher": "Marvel Comics",
+      "alter_ego": "romero",
+      "first_appearance": "2014",
+      "characters": "corsair",
+      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
+    },
+    {
+      "id": "xAmvyYQ",
+      "superhero": "richard",
+      "publisher": "Marvel Comics",
+      "alter_ego": "romero",
+      "first_appearance": "2014",
+      "characters": "corsair",
+      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
+    },
+    {
+      "id": "8jjc4-k",
+      "superhero": "richard",
+      "publisher": "Marvel Comics",
+      "alter_ego": "romero",
+      "first_appearance": "2014",
+      "characters": "corsair",
+      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
+    },
+    {
+      "id": "yGJF2qj",
+      "superhero": "richard",
+      "publisher": "Marvel Comics",
+      "alter_ego": "romero",
+      "first_appearance": "2014",
+      "characters": "corsair",
+      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
+    },
+    {
+      "id": "BUiOCv8",
+      "superhero": "richard",
+      "publisher": "Marvel Comics",
+      "alter_ego": "romero",
+      "first_appearance": "2014",
+      "characters": "corsair",
+      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
+    },
+    {
+      "id": "qDj9iV7",
+      "superhero": "richard",
+      "publisher": "Marvel Comics",
+      "alter_ego": "romero",
+      "first_appearance": "2014",
+      "characters": "corsair",
+      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
+    },
+    {
+      "id": "Iuwja2G",
+      "superhero": "richard",
+      "publisher": "DC Comics",
+      "alter_ego": "romero",
+      "first_appearance": "2014",
+      "characters": "corsair",
+      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
     }
   ]
 }

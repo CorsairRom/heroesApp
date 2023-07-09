@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from "@angular/forms";
+import { ActivatedRoute, Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 import { Hero, Publisher } from '../../interfaces/hero.interface';
 import { HeroesService } from '../../services/heroes.service';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-new-page',
@@ -9,7 +13,7 @@ import { HeroesService } from '../../services/heroes.service';
   styles: [
   ]
 })
-export class NewPageComponent {
+export class NewPageComponent implements OnInit{
 
   public heroForm = new FormGroup(
     {
@@ -30,7 +34,27 @@ export class NewPageComponent {
     {id: 'Marvel Comics', desc: 'Marvel - Comics'},
   ]
 
-  constructor (private heroService: HeroesService){}
+  constructor (
+    private heroService: HeroesService,
+    private activateRoute: ActivatedRoute,
+    private router: Router,
+    private snackbar: MatSnackBar
+    ){}
+
+
+  ngOnInit(): void {
+
+    if (!this.router.url.includes('edit')) return;
+
+    this.activateRoute.params.pipe(
+      switchMap( ({ id } )=> this.heroService.getHeroById( id ) ),
+    ).subscribe(hero=> {
+      if ( !hero) return this.router.navigateByUrl('/');
+
+      this.heroForm.reset( hero )
+      return;
+    });
+  }
 
   get currentHero():Hero{
     const hero = this.heroForm.value as Hero;
@@ -40,5 +64,24 @@ export class NewPageComponent {
   onSubmit():void {
     if(this.heroForm.invalid) return;
 
+    if (this.currentHero.id){
+      this.heroService.updateHero(this.currentHero)
+        .subscribe(hero => {
+          this.showSnackbar(`${hero.superhero} updated`)
+        })
+      return;
+    }
+
+    this.heroService.addHero(this.currentHero)
+      .subscribe(hero => {
+        this.router.navigate(['heros/edit', hero.id]);
+        this.showSnackbar(`${hero.superhero} created!`);
+      });
+
   }
+  showSnackbar( message: string ):void {
+    this.snackbar.open( message, 'done', {
+      duration: 2500,
+    });
+  };
 }
