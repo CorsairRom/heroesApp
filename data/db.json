@@ -153,14 +153,6 @@
       "characters": "Clinton Francis Barton"
     },
     {
-      "id": "marvel-cyclops",
-      "superhero": "Cyclops",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Scott Summers",
-      "first_appearance": "X-Men #1",
-      "characters": "Scott Summers"
-    },
-    {
       "id": "marvel-silver",
       "superhero": "Silver Surfer",
       "publisher": "Marvel Comics",
@@ -178,58 +170,13 @@
       "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
     },
     {
-      "id": "xAmvyYQ",
-      "superhero": "richard",
+      "id": "KgPIvqf",
+      "superhero": "batwoman",
       "publisher": "Marvel Comics",
-      "alter_ego": "romero",
-      "first_appearance": "2014",
-      "characters": "corsair",
-      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
-    },
-    {
-      "id": "8jjc4-k",
-      "superhero": "richard",
-      "publisher": "Marvel Comics",
-      "alter_ego": "romero",
-      "first_appearance": "2014",
-      "characters": "corsair",
-      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
-    },
-    {
-      "id": "yGJF2qj",
-      "superhero": "richard",
-      "publisher": "Marvel Comics",
-      "alter_ego": "romero",
-      "first_appearance": "2014",
-      "characters": "corsair",
-      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
-    },
-    {
-      "id": "BUiOCv8",
-      "superhero": "richard",
-      "publisher": "Marvel Comics",
-      "alter_ego": "romero",
-      "first_appearance": "2014",
-      "characters": "corsair",
-      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
-    },
-    {
-      "id": "qDj9iV7",
-      "superhero": "richard",
-      "publisher": "Marvel Comics",
-      "alter_ego": "romero",
-      "first_appearance": "2014",
-      "characters": "corsair",
-      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
-    },
-    {
-      "id": "Iuwja2G",
-      "superhero": "richard",
-      "publisher": "DC Comics",
-      "alter_ego": "romero",
-      "first_appearance": "2014",
-      "characters": "corsair",
-      "alt_img": "https://pics.filmaffinity.com/Aquaman-355320736-large.jpg"
+      "alter_ego": "alejandra",
+      "first_appearance": "2005",
+      "characters": "nada",
+      "alt_img": "https://pm1.aminoapps.com/7184/06576fc84faed7f836f2610f5aa1dea03d92c91fr1-670-961v2_uhq.jpg"
     }
   ]
 }
